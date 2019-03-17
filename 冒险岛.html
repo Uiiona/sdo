@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>冒险岛</title>
+<style>
+	html,body{margin:0;padding:0;}
+	
+	div{	vertical-align:bottom;
+			display:block;
+			margin:0;
+	}
+	a{text-decoration: none;}
+	li{list-style:none;}
+	.sdo{	 
+			width:100%;
+			height:50px;
+
+	}
+	.sdo_nav_contont{
+			position: absolute;
+			margin-left:352px;
+			width:1200px;
+			height:50px;
+			
+	}
+	.sdo_nav_logo{
+			position: absolute;
+			top: 7px;
+			left: 10px;
+			display:block;
+			width: 150px;
+			height: 35px;
+			background-image:url(../image/logo_snda.png);
+			background-position: 0 0;
+			background-repeat: no-repeat;
+
+	}
+	.sdo_nav_menu{height:50px;width:130px;margin:auto;
+			overflow: hidden;
+			position:absolute;
+			right:10px;
+			list-style: none;
+
+			
+			
+	}
+	.sdo_nav_menu li{
+		float:left;
+		margin-left: 12px;
+		padding-top: 15px;
+		
+	}
+	.sdo_nav_menu li a{
+			text-decoration: none;
+			font-size: 14px;
+			color:#504848;
+			font-weight:600;
+			
+			
+			
+	}
+	.sdo_nav_menu_division{
+			color:#190202;
+		font-size:14px;
+	}
+/*盛大标签结束*/
+			
+			
+			
+
+/*头部文本内容star*/			
+	
+	.container{
+			height:1000px;
+			width:100%;
+			position: absolute;
+			background-image:url(../image/home.jpg);
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			
+	}
+	.header{
+			width:100%;
+			height:355px;
+			
+	}
+	.header .w1200{
+			width:1200px;
+			height:355px;
+			position: absolute;
+			left:351.5px;
+			
+			
+	}
+	.header .mxd_logo{
+			position: absolute;
+			left:20px;
+			top:30px;
+			width: 132px;
+			height: 107px;
+			
+			
+			
+			
+	
+	}
+	.header font{
+			position: absolute;
+			top:150px;
+			font-size:14px;
+			
+	}
+	.w1200_nav{
+		display:block;
+		position: absolute;
+		top:15px;
+		right:80px;
+		width:900px;
+		height:50px;
+
+		
+		
+		
+		
+			
+	}
+	.mainnav{
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 50px;
+		
+		
+		
+			
+			
+	}
+	.w1200_nav li{
+		float:left;
+		list-style:none;
+		display: block;
+		width: 120px;
+	}
+	.w1200_nav li a{
+		display: block;
+		width:90px;
+		height:40px;
+		text-decoration:none;
+		text-align: center;
+		margin-right:25.5px;
+				
+	}
+	.w1200_nav li a strong{
+
+		color:#f7f4f4;
+		font-size:16px;
+	}
+	.w1200_nav li a small{
+		display: block;
+		color:#737171;
+		font-variant: small-caps;
+		line-height:10px;
+				
+	}
+	.w420_lk{
+		display:block;
+		width:420px;
+		height:240px;
+		position: absolute;
+		top:100px;
+		left:170px;
+		text-decoration:none;
+		
+				
+	}
+	/*背景图片失败.w1200_nav>.mainnav1>.subnav{
+		display: block;
+		position: absolute;
+	 	background-image:url(../image/nav_bg2.png);
+		width:2000px;
+		height: 355px;
+		margin-left: -625px;
+		margin-top: -20px;
+		}*/
+	.w1200_nav>.mainnav>.submain{
+		background-image:url(../image/nav_bg2.png);
+		background-repeat: no-repeat;
+		display: none;
+		position: absolute;
+		width: 2000px;
+		height: 500px;
+		margin: -30px 0 0 -572px;
+		
+		
+		
+		
+	}
+	.w1200_nav>.mainnav>.yc{
+		width: 2000px;
+		height: 500px;
+		display: none;
+		position: absolute;
+		margin: 23px 0 0 150px;
+		
+	}
+	
+	.w1200_nav>.mainnav>.yc>dl{
+		display: block;
+		font-size: 12px;
+		color:white;
+		float: left;
+		width: 120px;
+		
+		
+		
+		
+		
+		
+	}
+	.w1200_nav>.mainnav>.yc>dl>dd{
+		text-align: center;
+		margin:7px 0 0 -2px;	
+	}
+	.mainnav:hover>.submain{
+		display: block;
+	}
+	.mainnav:hover>.yc{
+		display: block;
+	}
+/*头部内容end*/
+	
+	
+	
+	
+	
+	.part1{
+		position:absolute;
+		background:url(../image/home_part1.png) no-repeat;
+		width: 1160px;
+		height: 303px;
+		left:371px;
+		}
+	.w1160{
+		width:1160px;
+		height: 303px;
+		margin: 0 auto;
+	}
+	.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+	.p1btn{
+		background:url(../image/mbtn_bg.png) no-repeat;
+		display: block;
+		width: 260px;
+		height:345px;
+		position:relative;
+		top:-45px;
+		left:20px;
+	}
+	.download{
+		background:url(../image/download_bg.png) no-repeat;
+		position:absolute;
+		left:21px;
+		top:-80px;
+		
+	}
+	.lflink{
+		position:absolute;
+		left: 60px;
+		top:130px;
+		
+	}
+	.lflink>ul>li{position:relative;
+		margin:12.5px 0 0 0;
+		list-style: none;
+		
+		
+	}
+	.p1news-tab{
+		position:absolute;
+		top:1px;
+		left: 230px;
+		
+	}
+	.p1news-tab>ul{
+		
+	}
+	.p1news-tab>ul>li{
+		float:left;
+		margin: 0 0 0 50px;
+		color:#FBF7F7;
+		list-style: none;
+		
+	}
+	.p1news-more{
+		position: absolute;
+		left: 780px;
+		top:16px
+	}
+	.p1news-body{
+		font-size: 12px;
+		width:570px;
+		position: absolute;
+		left:245px;
+		top:43px;
+	}
+	.p1news-list>ul>li{
+		margin:8px 0 0 0;
+		list-style: none;
+		
+	}
+	.p1news-list>ul>li>span{
+		color: #F90206;
+		
+	}
+	.xs{
+		color: #F3EEEE;
+		margin:0 0 0 10px;
+		font-weight: 600;
+		text-decoration:none;
+	}
+	.xs:hover{
+		text-decoration: underline;
+	}
+	.p1news-list>ul>li>img{
+		position: relative;
+		left: 15px;
+		top:3px
+		
+	}
+	.p1news-list>ul>li>em{
+		font-style: normal;
+		color: aliceblue;
+		float: right;
+		font-weight: 00
+	}
+	.p1sliderbox{
+		position: absolute;
+		left: 795px;
+		top:3px;
+	}
+	
+	
+	/*part2 star*/
+	.part2{
+		position: absolute;
+		width: 1160px;
+		height: 900px;
+		top:660px;
+		left: 371px;
+		padding-top: 20px;
+		margin: 0;
+	}
+	.m-left{
+		position: absolute;
+		width: 257px;
+		height:100%;
+	}
+	.history{
+		border-radius: 20px;
+		border: 0.5px solid #9B9A9A;
+		width: 254px;
+		height: 226px;
+	}
+	.his-opt{
+		position: absolute;
+		padding:9px 0 10px 50px;
+		font-size: 12px;
+		
+	}
+	.his-opt>select{
+		width:auto;
+		height: 30px;
+		line-height: 50px;
+		color: #EF090D;
+		border: 5px solid #12E731;
+	}
+	.gameservice{
+		margin:20px 20px 20px 0;
+		border-radius: 20px;
+		border:0.5px solid #6F6F6F;
+		width: 254px;
+		height: 380px;
+		
+		
+	}
+	.hd{
+		text-indent: -999em;
+		background: url(../image/gameService-hd.jpg) no-repeat 0 0;
+		height: 50px;
+		margin: 10px 0 0 5px;
+	}
+	.gsp{
+		padding: 0 0 0 30px;
+		font-size: 12px;
+		color: #696969;
+		line-height: 22px;
+	}
+	.gsp>a{
+		color: #696969;
+		text-decoration: underline;
+	}
+	.gsul{
+		padding: 0 0 0 10px;
+		
+	}
+	.gsul>li{
+		font-size: 15px;
+		text-align: center;
+		line-height: 28px;
+	}
+	.gsul>li>a{
+		text-indent: -999em;
+		color: black;
+	}
+	.wx-wb{
+		border-radius:15px;
+		background: url(../image/weixin-hd.png) no-repeat 0 0;
+		width: 254px;
+		height: 275px;
+	}
+	
+	.wx-wb>ul>li{
+		float: left;
+		padding:10px 40px 0 0;
+		font-weight: 600;
+	}
+	.wx-wb-bg{
+		position: absolute;
+		top:684px;
+		background: #FBFBFB;
+		border-radius:  0 0 15px 15px; 
+		border: 1px solid #9F9F9F;
+		width: 251px;
+		height: 200px;
+	}
+	.wx-wb-bg>img{
+		position: relative;
+		left: 50px;
+		top:30px;
+	}
+	/*m-left-end*/
+	
+	.m-mid{
+		position:absolute;
+		width: 613px;
+		height: 920px;
+		left:275px;
+		top:-10px;
+	}
+	.shoping{
+		background: url(../image/shopping_bg.png) no-repeat 0 0;
+		width: 613px;
+		height:214px;
+		
+	}
+	.pay-btn{
+		position: absolute;
+		right:20px;
+		top:40px;
+	}
+	.tempWrap{
+		width: 561px;
+		height: 161px;
+		overflow: hidden;
+		position: relative;
+		top:45px;
+		margin: 30px 0;
+	}
+	.tW-ul{
+		position:relative;
+		width: 800px;
+		height:200px;
+		overflow: hidden;
+		margin:0;
+		
+	}
+	.tW-ul>li{
+		background: url(../image/pic1_bg.png) no-repeat 0 0;
+		width:110px;
+		height: 110px;
+		float: left;
+		margin: 0 0 0 20px;
+	}
+	.tW-ul>li>a{
+		position: relative;
+		left:10px;
+		top:10px;
+	}
+	.tW-ul>li>p{
+		font-size: 12px;
+		line-height: 15px;
+		white-space: nowrap;
+		text-overflow:ellipsis;
+		overflow: hidden;
+	}
+	.dec1{
+		position: relative;
+		left:5px;
+		top:20px;
+		
+	}
+	.dec2{
+		position: relative;
+		left:5px;
+		top:20px;
+		
+	}
+	.m-mid-act{
+		display: block;
+		margin-top: 35px;
+	}
+	.playworld{
+		background: url(../image/playWorld_bg.png) no-repeat 0 0;
+		width: 613px;
+		height: 213px;
+		margin: 27px 0 0 0;
+	}
+	.pw-btn{
+		position: relative;
+		left:579px;
+		top:11px;
+	}
+	.pw-list{
+		position: relative;
+		top:20px;
+	}
+	.pw-ul{
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.pw-ul>li>span{
+		color: #E89B1E;
+	}
+	.pw-ul>li>em{
+		position: absolute;
+		right: 20px;
+	}
+	.mxd_media{
+		background:url(../image/media_bg.png) no-repeat 0 0;
+		width: 613px;
+		height: 220px;
+		margin: 25px 0 0 0;
+	}
+	.media-list{
+		position: relative;
+		top:70px;
+	}
+	/*m-mid end */
+	
+	.m-right{
+		position:absolute;
+		width: 200px;
+		height: 920px;
+		right: 55px;
+		top:5px;
+	}
+	.bulletin>ul{
+		padding: 0;
+		
+	}
+	.master{
+		background: url(../image/master_bg.png) no-repeat 0 0;
+		width:254px;
+		height: 280px;
+		margin: 50px 0;
+	}
+	.coopertion{
+		background: url(../image/cooperation_bg.png) no-repeat 0 0;
+		width:254px;
+		height:220px;
+	}
+	.footer{
+		position: absolute;
+		top:1550px;
+		left:25%;
+	}
+
+	
+</style>
+</head>
+<body>
+<div class="sdo">
+	<div class="sdo_nav">
+		<div class="sdo_nav_contont"><a href="http://www.sdo.com/" class="sdo_nav_logo"></a>
+			<ul class="sdo_nav_menu" >
+				<li><a href="http://login.sdo.com/sdo/Login/LoginSDO.php?appId=211&areaId=1000&service=https%3A%2F%2Fpay.sdo.com%2Fitem%2FSDG-5" target="_blank">充值</a></li>
+				<li class="sdo_nav_menu_division">|</li>
+				<li><a href="http://kf.sdo.com/?appId=5" target="_blank">彩虹客服</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container">
+<!--头部内容开始-->
+	<div class="header">
+		<div class="w1200">
+			<div  class="mxd_logo"><a href="file:///C:/Users/Uiiiona/Desktop/%E6%88%91%E7%9A%84html/HTML/%E5%86%92%E9%99%A9%E5%B2%9B.html"><img src="../image/mxd_logo.png"></a></div>
+			<div class="age-tips"><font>适龄提示：适合12岁以上用</font></div>
+			<div class="w1200_nav">	
+				<div class="mainnav">
+					<div class="mainnav1">
+						<ul>
+							<li><a href="file:///C:/Users/Uiiiona/Desktop/%E6%88%91%E7%9A%84html/HTML/%E5%86%92%E9%99%A9%E5%B2%9B.html"><strong>官方首页</strong><br/><small>home</small></a></li>
+							<li><a href="http://mxd.sdo.com/web6/download/down.html" target="_blank"><strong>下载中心</strong></br><small>download</small></a></li>
+							<li><a href="http://mxd.sdo.com/web6/news/newsList.asp?CategoryID=a" target="_blank"><strong>岛内新闻</strong></br><small>news</small></a></li>
+							<li><a href="http://mxd.sdo.com/web6/gameinfo/intro.asp" target="_blank"><strong>游戏资料</strong></br><small>info</small></a></li>
+							<li><a href="http://login.sdo.com/sdo/Login/LoginSDO.php?appId=211&areaId=1000&service=https%3A%2F%2Fpay.sdo.com%2Fitem%2FSDG-5" target="_blank"><strong>充值专区</strong></br><small>pay</small></a></li>
+							<li><a href="http://avata.sdo.com/forum.php?mod=forumdisplay&fid=137" target="_blank"><strong>玩家咨询</strong></br><small>interaction</small></a></li>
+							<li><a href="http://kf.sdo.com/" target="_blank"><strong>彩虹客服</strong></br><small>service</small></a></li>
+
+						</ul>	
+					</div>
+					
+					<div class="submain">
+
+						</div>
+							
+					<div class="yc">
+								<dl>
+									<dd>客户端下载</dd>
+									<dd>补丁下载</dd>
+									<dd>游戏内置视频下载</dd>
+									<dd>S档案馆</dd>
+								</dl>
+								<dl>
+									<dd>综合新闻</dd>
+									<dd>热门活动</dd>
+									<dd>商品促销</dd>
+									<dd>最新公告</dd>
+								</dl>
+								<dl>
+									<dd>游戏介绍</dd>
+									<dd>新手上路</dd>
+									<dd>新手成长</dd>
+									<dd>高手进阶</dd>
+									<dd>历史版本</dd>
+								</dl>
+								<dl>
+									<dd>我要充值</dd>
+									<dd>充值热点问题</dd>
+									<dd>冒险券兑换</dd>
+								</dl>
+								<dl>
+									<dd>游戏论坛</dd>
+									<dd>新浪微博</dd>
+									<dd>官网微信</dd>
+								</dl>
+								<dl>
+									<dd>我的客服</dd>
+									<dd>账号保护</dd>
+									<dd>密码找回</dd>
+									<dd>资料修改</dd>
+									<dd>常见问题</dd>
+									<dd>用户协议</dd>
+									<dd>心享服务</dd>
+								</dl>
+							</div>
+				</div>
+			<!--活动链接开始-->
+			<a class="w420_lk" href="http://act.mxd.sdo.com/project/v160/" target="_blank" title="点击查看详情"></a>
+			<!--活动链接结束-->	
+				
+			</div>	
+		</div>
+	</div>
+<!--头部内容结束-->
+<!--w1160   part1 开始-->
+	<div class="part1 w1160 clearfix">
+	<!--快速按钮-->
+	<div class="p1btn">
+		<div class="download">
+			<a href="#" target="_blank"><img src="../image/download_btn.png" alt="游戏下载"></a>
+		</div>
+		<div class="lflink">
+			<ul>
+				<li><a href="#" target="_blank">账号注册</a></li>
+				<li><a href="#" target="_blank">领奖专区</a></li>
+				<li><a href="#" target="_blank">购卡充值</a></li>
+				<li><a href="#" target="_blank">账号保护</a></li>
+				<li><a href="#" target="_blank">密码找回</a></li>
+				<li><a href="#" target="_blank">游戏论坛</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--新闻-->
+	<div class="p1news">
+		<div class="p1news-tab">
+			<ul>
+				<li><a href="#" target="_blank">综合新闻</a></li>
+				<li><a href="#" target="_blank">热门活动</a></li>
+				<li><a href="#" target="_blank">商品促销</a></li>
+				<li><a href="#" target="_blank">最新公告</a></li>
+			</ul>
+		</div>
+		<div class="p1news-more">
+			<a href="#" target="_blank"><img src="../image/news_more.png" alt="更多新闻"></a>
+		</div>
+		<div class="p1news-body">
+			<div class="p1news-list">
+				<ul>
+					<li><span>【公告】</span><a class="xs" href="#">大首都哈哦啊啥都撒活动啊收到哦啊啥都后代后代卡死</a><img src="../image/new.png"><em>2019/03/08</em></li>
+					<li><span>【公告】</span><a class="xs" href="#">大首都哈哦啊啥都撒活动啊收到哦啊啥都</a><img src="../image/new.png"><em>2019/03/08</em></li>
+					<li><span>【公告】</span><a class="xs" href="#">大首都哈哦啊啥都撒活动啊收到哦啊啥都</a><img src="../image/new.png"><em>2019/03/08</em></li>
+					<li><span>【公告】</span><a class="xs" href="#">大首都哈哦啊啥都撒活动啊收到哦啊啥都dsadsadas</a><img src="../image/new.png"><em>2019/03/08</em></li>
+					<li><span>【公告】</span><a class="xs" href="#">大首都哈哦啊啥都撒活动啊收到哦啊啥都</a><img src="../image/new.png"><em>2019/03/08</em></li>
+					<li><span>【公告】</span><a class="xs" href="#">大首都哈哦啊啥都撒活动啊收到哦啊啥都</a><img src="../image/new.png"><em>2019/03/08</em></li>
+					<li><span>【公告】</span><a class="xs" href="#">大首都哈哦啊啥都撒活动啊收到哦啊啥都</a><img src="../image/new.png"><em>2019/03/08</em></li>
+					<li><span>【公告】</span><a class="xs" href="#">大首都哈哦啊啥都撒活动啊收到哦啊啥都</a><img src="../image/new.png"><em>2019/03/08</em></li>
+					<li><span>【公告】</span><a class="xs" href="#">大首都哈哦啊啥都撒活动啊收到哦啊啥都</a><img src="../image/new.png"><em>2019/03/08</em></li>
+					<li><span>【公告】</span><a class="xs" href="#">大首都哈哦啊啥都撒活动啊收到哦啊啥都</a><img src="../image/new.png"><em>2019/03/08</em></li>
+				</ul>
+			</div>
+			<div class="news-list"></div>
+			<div class="news-list"></div>
+			<div class="news-list"></div>
+		</div>
+	
+	</div>
+	<!--焦点图-->
+	<div class="p1sliderbox">
+		<div class="tempWarp">
+			<ul>
+				<li><a href="#" alt="女神节活动链接"><img src="../image/15519271268790.png"></a></li>
+			</ul>
+		
+		</div>
+	</div>
+</div>
+<!--w1160  part2  star--> 
+	<div class="part2 w1160 clearfix">
+		<!--左-->
+		<div class="m-left" style="">
+			<!--历史版本-->
+			<div class="history">
+				<div class="his-img">
+					<a href="#" target="_blank"><img alt="版本" src="../image/15505890106076.png" width="254" height="166"></a>
+				</div>
+				<div class="his-opt">
+					<select name="history" onChange="">
+						<option>查看更多历史版本介绍</option>
+						<option value="www.hao123.com" target=>黑魔法师</option>
+						<option>黑魔法师</option>
+						<option>黑魔法师dsadsadsad</option>
+						<option>黑魔法师fsafasf</option>
+						<option>黑魔法师dsa</option>
+						<option>黑魔法师ga</option>
+						<option>黑魔法师</option>
+						<option>黑魔法师</option>
+						<option>黑魔法师dsa</option>
+						<option>黑魔法师</option>
+					</select>
+				</div>
+			</div>
+			<!--彩虹客服-->
+			<div class="gameservice">
+				<h3 class="hd">彩虹客服</h3>
+				<hr/ style="border:0.5px dotted #6E6E6E">
+				<p class="gsp">
+					24小时客服热线：95105222-8025<br/>
+					未开通95地区或海外用户请拨打：<br/>
+					+86-21-50504728-8025<br/>
+					彩虹客服手机版：<a href="#" target="_blank">点击下载</a><br/>
+					视频接待入口：<a href="#" target="_blank">直接进入</a><br/>
+					心享服务：<a href="#" target="_blank">点击进入</a><br/>
+					彩虹问答：<a href="#" target="_blank">点击进入</a>
+				</p>
+				<ul class="gsul">
+					<li><a href="#" target="_blank">防乘幂使用智能</a></li>
+					<li><a href="#" target="_blank">方程米信息不填</a></li>
+					<li><a href="#" target="_blank">神秘信息不填入口</a></li>
+					<li><a href="#" target="_blank">举报信息入口</a></li>
+				</ul>
+			</div>
+			<!--微信微博-->
+			<div class="wx-wb">
+				<ul class=>
+					<li>官方微信</li>
+					<li>官方微博</li>
+				</ul>
+				<div class=wx-wb-bg>
+				 	<img src="../image/ewm1.jpg">
+				</div>
+				
+			</div>
+		</div>
+		<!--中-->
+		<div class="m-mid">
+			<!--新品展示-->
+			<div class="shoping">
+				<div class="pay-btn">
+					<a href="#" target="_blank"><img src="../image/pay_btn.png"></a>
+				</div>
+				<div class="list-shoping">
+					<div class="tempWrap">
+						<ul class="tW-ul">
+							<li>
+								<a href="#" target="_blank"><img src="../image/15445804785425.gif" alt="点装>"</a>
+								<p class="dec1"><img src="../image/pic1-item1.png" alt="圆点"><a href="#" target="_blank">的撒打算套aaaaaaaa</a></p>
+								<p class="dec2"><img src="../image/pic1-item2.png" alt="圆点"><a href="#" target="_blank">礼包</a></p>
+							</li>
+							<li><a href="#" target="_blank"><img src="../image/15445804785425.gif" alt="点装>"</a>
+								<p class="dec1"><img src="../image/pic1-item1.png" alt="圆点"><a href="#" target="_blank">的撒打算套aaaaaaaa</a></p>
+								<p class="dec2"><img src="../image/pic1-item2.png" alt="圆点"><a href="#" target="_blank">礼包</a></p>
+							</li>
+							<li><a href="#" target="_blank"><img src="../image/15445804785425.gif" alt="点装>"</a>
+								<p class="dec1"><img src="../image/pic1-item1.png" alt="圆点"><a href="#" target="_blank">的撒打算套aaaaaaaa</a></p>
+								<p class="dec2"><img src="../image/pic1-item2.png" alt="圆点"><a href="#" target="_blank">礼包</a></p>
+							</li>
+							<li><a href="#" target="_blank"><img src="../image/15445804785425.gif" alt="点装>"</a>
+								<p class="dec1"><img src="../image/pic1-item1.png" alt="圆点"><a href="#" target="_blank">的撒打算套aaaaaaaa</a></p>
+								<p class="dec2"><img src="../image/pic1-item2.png" alt="圆点"><a href="#" target="_blank">礼包</a></p>
+							</li>
+							<li><a href="#" target="_blank"><img src="../image/15445804785425.gif" alt="点装>"</a>
+								<p class="dec1"><img src="../image/pic1-item1.png" alt="圆点"><a href="#" target="_blank">的撒打算套aaaaaaaa</a></p>
+								<p class="dec2"><img src="../image/pic1-item2.png" alt="圆点"><a href="#" target="_blank">礼包</a></p>
+							</li>
+							<li><a href="#" target="_blank"><img src="../image/15445804785425.gif" alt="点装>"</a>
+								<p class="dec1"><img src="../image/pic1-item1.png" alt="圆点"><a href="#" target="_blank">的撒打算套aaaaaaaa</a></p>
+								<p class="dec2"><img src="../image/pic1-item2.png" alt="圆点"><a href="#" target="_blank">礼包</a></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--活动滚动-->
+			<div class="m-mid-act">
+				<a href="#" target="_blank"><img src="../image/15519271906132.jpg" alt="活动"></a>
+			</div>
+			<!--玩家天地-->
+			<div class="playworld">
+				<a class="pw-btn" href="#" target="_blank"><img src="../image/more2.png" alt="按钮"></a>
+				<div class="pw-list">
+					<ul class="pw-ul">
+						<li><span>[玩家天地]</span> <a href="#" target="_blank">官论冒险月刊201902期 新年快乐,诸事顺利</a><em>2019/01/01</em></li>
+						<li><span>[玩家天地]</span> <a href="#" target="_blank">官论冒险月刊201902期 新年快乐,诸事顺利</a><em>2019/01/01</em></li>
+						<li><span>[玩家天地]</span> <a href="#" target="_blank">官论冒险月刊201902期 新年快乐,诸事顺利</a><em>2019/01/01</em></li>
+						<li><span>[玩家天地]</span> <a href="#" target="_blank">官论冒险月刊201902期 新年快乐,诸事顺利</a><em>2019/01/01</em></li>
+						<li><span>[玩家天地]</span> <a href="#" target="_blank">官论冒险月刊201902期 新年快乐,诸事顺利</a><em>2019/01/01</em></li>
+						<li><span>[玩家天地]</span> <a href="#" target="_blank">官论冒险月刊201902期 新年快乐,诸事顺利</a><em>2019/01/01</em></li>
+						<li><span>[玩家天地]</span> <a href="#" target="_blank">官论冒险月刊201902期 新年快乐,诸事顺利</a><em>2019/01/01</em></li>
+						<li><span>[玩家天地]</span> <a href="#" target="_blank">官论冒险月刊201902期 新年快乐,诸事顺利</a><em>2019/01/01</em></li>
+					</ul>
+				</div>
+			</div>
+			<!--冒险影音-->
+			<div class="mxd_media">
+				<div class="media-list">
+					<ul>
+						<li><a><img src="../image/14834315757174.png" alt="视频观看"></a></li>
+						<!--<li><a><img src="../image/14834316046290.png" alt="视频观看"></a></li>-->
+					</ul>
+			</div>
+		</div>
+			</div>
+			<!--右-->
+		<div class="m-right">
+			<!--新手外挂公告-->
+			<div class="bulletin">
+				<ul>
+					<li><img src="../image/rlink.png" alt="公告"></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<!--冒险达人-->
+			<div class="master">
+			</div>
+			<!--媒体专区-->
+			<div class="coopertion">
+				
+			</div>
+		</div>
+	</div>
+	<!--底部-->
+	<div class="footer">
+		<br/>
+		<p><span style="color: red;">健康游戏忠告</span>：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+		<p style="color:#B1B0B0;text-align: center;">Copyright © 2016 NEXON Korea Corporation. Licensed to Shanda Games, in China.</p>
+	</div>
+</div>
+<div>
+	<P>DSADASDASDASDASD</P>dasdasdasdsadasd
+</div>
+
+	
+</body>
+</html>
